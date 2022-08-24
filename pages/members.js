@@ -1,4 +1,5 @@
 import Header from "components/Header"
+import Loading from "components/Loading"
 import { useRouter } from "next/router"
 import { useSession } from "next-auth/react"
 import { getMarkdown } from "lib/markdown"
@@ -12,7 +13,7 @@ export default function Members({ markdown }) {
         return (
             <>
                 <Header />
-                <p>loading . . . </p>
+                <Loading />
             </>
         )
     }

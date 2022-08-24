@@ -15,6 +15,10 @@ a {
     box-sizing: border-box;
 }
 
+#header-bar {
+    @apply text-4xl text-emerald-700 font-bold text-center border-b-2 border-emerald-700 py-3;
+}
+
 .markdown h2 {
     @apply text-3xl font-semibold mt-4;
 }

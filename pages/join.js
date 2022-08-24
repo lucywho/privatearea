@@ -1,6 +1,7 @@
-import Header from "components/Header"
 import Script from "next/script"
+import Header from "components/Header"
 import { useRouter } from "next/router"
+import Loading from "components/Loading"
 import { useSession } from "next-auth/react"
 
 export default function Join() {
@@ -12,7 +13,7 @@ export default function Join() {
         return (
             <>
                 <Header />
-                <p>loading . . . </p>
+                <Loading />
             </>
         )
     }

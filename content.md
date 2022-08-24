@@ -1,10 +1,11 @@
-# Testing title
+# Subscriber-only Content
 
-testing content
+This is text stored in a markdown file within the repository. It is easier to update than the pages files.
 
--   testing list
--   testing list
+-   text file is formatted in markdown
+-   styling is added in the globals.css file by applying tailwind classes
+-   emojis and images can be embedded
 
 🧡🧡🧡
 
-[testing a link](https://lucysco.de)
+[here's a link](https://lucysco.de)

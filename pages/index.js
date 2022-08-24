@@ -1,4 +1,6 @@
+import Link from "next/link"
 import Header from "components/Header"
+import Loading from "components/Loading"
 import { useRouter } from "next/router"
 import { useSession } from "next-auth/react"
 
@@ -11,7 +13,7 @@ export default function Home() {
         return (
             <>
                 <Header />
-                <p>loading . . . </p>
+                <Loading />
             </>
         )
     }
@@ -38,12 +40,12 @@ export default function Home() {
                 <p className="mt-10">Just $5/m</p>
 
                 <div className="mt-10">
-                    <a
+                    <Link
                         className="bg-black text-white px-5 py-2"
                         href="/api/auth/signin"
                     >
                         Become a supporter
-                    </a>
+                    </Link>
                 </div>
             </div>
         </>
