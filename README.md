@@ -8,4 +8,8 @@ A [tutorial](https://github.com/flaviocopes/bootcamp-2022-week-17-privatearea) b
 -   Subscribers automatically routed to members area
 -   Markdown file processed using gray-matter and remark to display as html on page
 
+![image](public/tinysub-public.png)
+main page
+
 ![image](public/tinysubs.png)
+members area
