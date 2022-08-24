@@ -1,7 +1,6 @@
 import Link from "next/link"
-import Header from "components/Header"
-import Loading from "components/Loading"
 import { useRouter } from "next/router"
+import Loading from "components/Loading"
 import { useSession } from "next-auth/react"
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
     if (loading) {
         return (
             <>
-                <Header />
                 <Loading />
             </>
         )
@@ -25,27 +23,25 @@ export default function Home() {
 
     return (
         <>
-            <Header />
             <div className="text-center ">
-                <h1 className=" mt-20 font-extrabold text-2xl">Private Area</h1>
+                <h1 className=" mt-20 font-extrabold text-2xl">Public Area</h1>
+                <p className="mt-10"> ...there&apos;s not much here!</p>
 
-                <p className="mt-10">Join the private area to have access to</p>
+                <p className="m-10">
+                    Become a supporter and get access to the private
+                    member&apos;s area, where you&apos;ll find:
+                </p>
 
                 <ol className="mt-10 list-inside list-decimal">
-                    <li>The lyrics book in PDF</li>
-                    <li>Exclusive 30% discount on the albums</li>
-                    <li>Exclusive access to preorders</li>
+                    <li>Interesting Stuff</li>
+                    <li>Exclusive Offers</li>
+                    <li>News and Updates First</li>
                 </ol>
 
-                <p className="mt-10">Just $5/m</p>
+                <p className="mt-10">Just €5/m</p>
 
-                <div className="mt-10">
-                    <Link
-                        className="bg-black text-white px-5 py-2"
-                        href="/api/auth/signin"
-                    >
-                        Become a supporter
-                    </Link>
+                <div className="support">
+                    <Link href="/api/auth/signin">Become a supporter</Link>
                 </div>
             </div>
         </>

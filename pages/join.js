@@ -1,5 +1,4 @@
 import Script from "next/script"
-import Header from "components/Header"
 import { useRouter } from "next/router"
 import Loading from "components/Loading"
 import { useSession } from "next-auth/react"
@@ -12,7 +11,6 @@ export default function Join() {
     if (loading) {
         return (
             <>
-                <Header />
                 <Loading />
             </>
         )
@@ -31,8 +29,6 @@ export default function Join() {
     return (
         <>
             <Script src="https://js.stripe.com/v3/" />
-
-            <Header />
 
             <div className="text-center ">
                 <h1 className=" mt-20 font-extrabold text-2xl">Private Area</h1>

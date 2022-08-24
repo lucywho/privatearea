@@ -1,8 +1,7 @@
-import Header from "components/Header"
-import Loading from "components/Loading"
 import { useRouter } from "next/router"
-import { useSession } from "next-auth/react"
+import Loading from "components/Loading"
 import { getMarkdown } from "lib/markdown"
+import { useSession } from "next-auth/react"
 
 export default function Members({ markdown }) {
     const router = useRouter()
@@ -12,7 +11,6 @@ export default function Members({ markdown }) {
     if (loading) {
         return (
             <>
-                <Header />
                 <Loading />
             </>
         )
@@ -30,7 +28,6 @@ export default function Members({ markdown }) {
 
     return (
         <>
-            <Header />
             <div className="text-center ">
                 <h1 className=" mt-20 font-extrabold text-2xl">Private Area</h1>
                 <div
